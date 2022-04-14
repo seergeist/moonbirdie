@@ -6,16 +6,16 @@
 	import '../app.scss';
 </script>
 
-<body class="min-h-100vh min-w-100vw m-0">
+<body class="min-h-100vh min-w-100vw m-0 relative">
 	<Header />
 	<Bird />
 	<main class="flex z-10 flex-1 flex-col p-4 w-full mx-auto">
 		<slot />
 	</main>
 
-	<footer class="flex flex-col content-center items-center p-10 w-full bottom-0 absolute bg-gradient-to-b from-orange-500/0 to-orange-700/40">
+	<footer class="flex flex-col text-center py-4 lg:py-8 w-full bottom-0 absolute bg-gradient-to-b from-orange-500/0 to-orange-700/40">
 		<p text-white>
-			Thank you for staking with <a class="font-bold text-gray-200" href="https://moonbirdie.com">moonbirdie.com</a>
+			Thank you for staking with <a class="font-bold text-gray-200/80" href="https://moonbirdie.com">us.</a>
 		</p>
 	</footer>
 </body>

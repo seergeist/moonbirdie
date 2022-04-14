@@ -1,6 +1,6 @@
 import preprocess from 'svelte-preprocess';
 /** @type {import('@sveltejs/kit').Config} */
-import vercel from '@sveltejs/adapter-vercel';
+import node from '@sveltejs/adapter-node';
 import Unocss from 'unocss/vite';
 import { presetUno, presetAttributify } from 'unocss';
 import presetIcons from '@unocss/preset-icons';
@@ -14,7 +14,7 @@ const config = {
 	],
 
 	kit: {
-		adapter: vercel(),
+		adapter: node(),
 		appDir: 'app',
 		vite: {
 			plugins: [
